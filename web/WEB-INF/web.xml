@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>homePage.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet-mapping>
+        <servlet-name>RoleController</servlet-name>
+        <url-pattern>/ViewAllRoles</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>CreateEmployeeServlet</servlet-name>
+        <url-pattern>/EmployeeData</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet-mapping>
+        <servlet-name>TaskController</servlet-name>
+        <url-pattern>/ViewAllTasks</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>EmployeeController</servlet-name>
+        <url-pattern>/ViewAllEmployees</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+
+ <servlet>
+        <servlet-name>RoleController</servlet-name>
+        <servlet-class>Servlets.RoleController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>EmployeeController</servlet-name>
+        <servlet-class>Servlets.EmployeeController</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+        <servlet-name>TaskController</servlet-name>
+        <servlet-class>Servlets.TaskController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>CreateEmployeeServlet</servlet-name>
+        <servlet-class>Servlets.CreateEmployeeServlet</servlet-class>
+    </servlet>
+
+</web-app>
